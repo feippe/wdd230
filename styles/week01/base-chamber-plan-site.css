@@ -1,0 +1,47 @@
+main section.three-spaces {
+    grid-column: 1 / span 3;
+}
+
+#colors-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 16px 0 16px;
+}
+#colors-block .color-block {
+    text-align: center;
+    background-color: #000;
+    padding: 16px 0;
+    font-size: 10px;
+}
+#colors-block .color-block.c-1B2C75 {
+    background-color: #1B2C75;
+    color: #FFF;
+}
+#colors-block .color-block.c-FFCB01 {
+    background-color: #FFCB01;
+}
+#colors-block .color-block.c-00B49D {
+    background-color: #00B49D;
+}
+#colors-block .color-block.c-57598C {
+    background-color: #57598C;
+    color: #FFF;
+}
+#colors-block .color-block.c-252525 {
+    background-color: #252525;
+    color: #FFF;
+}
+
+.text-montserrat {
+    font-family: Montserrat;
+    font-size: 18px;
+}
+.text-prompt {
+    font-family: Prompt;
+    font-size: 18px;
+}
+.img-wireframe {
+    max-width: 100%;
+}
