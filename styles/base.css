@@ -159,13 +159,23 @@ footer #lastModified {
 	font-size: 2rem;
 	font-weight:700;
 	text-decoration: none;
-	padding: 4px 16px;
+	padding: 8px 16px;
 	background-color: var(--color-black);
 	color: var(--color-white);
 }
-#menu::before {
-	content: "≡";
+#menu svg {
+    color: #fff;
+    height: 24px;
 }
-#menu.show::before {
-	content: "X";
+#menu svg.hamburguer {
+    display: block;
+}
+#menu svg.close {
+    display: none;
+}
+#menu.show svg.hamburguer {
+    display: none;
+}
+#menu.show svg.close {
+    display: block;
 }
