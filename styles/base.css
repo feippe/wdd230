@@ -49,6 +49,10 @@ nav {
     margin: 0;
     padding: 0;
     height: auto;
+    display: none;
+}
+nav.show {
+    display: block;
 }
 nav > ul {
     margin: 0;
@@ -148,4 +152,20 @@ footer #lastModified {
     font-size: 14px;
     margin: 0 0 16px 0;
     color: var(--color-yellow);
+}
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: 4px 16px;
+	background-color: var(--color-black);
+	color: var(--color-white);
+}
+#menu::before {
+	content: "≡";
+}
+#menu.show::before {
+	content: "X";
 }

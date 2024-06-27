@@ -2,6 +2,9 @@
     main {
         grid-template-rows: auto auto;
     }
+    nav {
+        display: block;
+    }
     nav > ul {
         display: flex;
         flex-direction: row;
@@ -15,6 +18,9 @@
     main section.card-information {
         grid-area: 2 / 3 / 3 / 4;
     }
+    #menu {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 1000px) {
