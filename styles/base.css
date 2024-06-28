@@ -154,16 +154,25 @@ footer #lastModified {
     color: var(--color-yellow);
 }
 
-#menu {
-	display: block;
-	font-size: 2rem;
-	font-weight:700;
+#bar-menu-mobile {
+    display: flex;
+    background-color: var(--color-black);
+}
+
+#menu,
+#menu-dark-mode {
+	flex: 1 1 auto;
+    width: calc(50% - 32px);
 	text-decoration: none;
-	padding: 8px 16px;
+	padding: 8px 16px 4px 16px;
 	background-color: var(--color-black);
 	color: var(--color-white);
 }
-#menu svg {
+#menu-dark-mode {
+    text-align: right;
+}
+#menu svg,
+#menu-dark-mode svg {
     color: #fff;
     height: 24px;
 }
@@ -173,9 +182,9 @@ footer #lastModified {
 #menu svg.close {
     display: none;
 }
-#menu.show svg.hamburguer {
+#bar-menu-mobile.show svg.hamburguer {
     display: none;
 }
-#menu.show svg.close {
+#bar-menu-mobile.show svg.close {
     display: block;
 }

@@ -1,0 +1,36 @@
+:root {
+    --color-yellow-dark-mode: #FFCC0D;
+    --color-orange-dark-mode: #FF7326;
+    --color-red-dark-mode: #70071f;
+    --color-pink-dark-mode: #5a1432;
+    --color-violet-dark-mode: #702A8C;
+    --color-link-dark-mode:#a9afff;
+    --color-white-dark-mode: #FFFFFF;
+    --color-black-dark-mode: #000000;
+}
+
+.dark-mode {
+    background-color: var(--color-black-dark-mode);
+    color: var(--color-white-dark-mode);
+}
+.dark-mode a {
+    color: var(--color-link-dark-mode);
+}
+
+.dark-mode header {
+    background-color: var(--color-red-dark-mode);
+} 
+.dark-mode main section {
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 25px -11px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0px 0px 25px -11px rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 25px -11px rgba(255,255,255,0.5);
+    padding-bottom: 16px;
+}
+.dark-mode main section h2 {
+    background-color: var(--color-red-dark-mode);
+}
+
+.dark-mode footer {
+    background-color: var(--color-pink-dark-mode);
+}

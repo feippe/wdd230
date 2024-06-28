@@ -1,7 +1,3 @@
-
-
-document.querySelector('#menu').addEventListener('click', () => {
-    console.log('click');
-	document.querySelector('.navigator').classList.toggle('show');
-	document.querySelector('#menu').classList.toggle('show');
+document.querySelector('#menu-dark-mode').addEventListener('click', () => {
+	document.querySelector('body').classList.toggle('dark-mode');
 });
