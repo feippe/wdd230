@@ -16,6 +16,9 @@
 .dark-mode a {
     color: var(--color-link-dark-mode);
 }
+.dark-mode .navigator a {
+    color: var(--color-white-dark-mode);
+}
 
 .dark-mode header {
     background-color: var(--color-red-dark-mode);
