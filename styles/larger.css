@@ -18,7 +18,7 @@
     main section.card-information {
         grid-area: 2 / 3 / 3 / 4;
     }
-    #menu {
+    #bar-menu-mobile {
 		display: none;
 	}
 }
