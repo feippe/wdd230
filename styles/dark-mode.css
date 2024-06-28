@@ -3,9 +3,10 @@
     --color-orange-dark-mode: #FF7326;
     --color-red-dark-mode: #70071f;
     --color-pink-dark-mode: #5a1432;
-    --color-violet-dark-mode: #702A8C;
+    --color-violet-dark-mode: #4f1d63;
     --color-link-dark-mode:#a9afff;
     --color-white-dark-mode: #FFFFFF;
+
     --color-black-dark-mode: #000000;
 }
 
@@ -36,4 +37,13 @@
 
 .dark-mode footer {
     background-color: var(--color-pink-dark-mode);
+}
+
+.dark-mode nav > ul > li > a {
+    border-bottom: solid 4px var(--color-pink-dark-mode);
+    background-color: var(--color-pink-dark-mode);
+}
+.dark-mode nav > ul > li > a.selected {
+    background-color: var(--color-violet-dark-mode);
+    border-bottom: solid 4px var(--color-violet-dark-mode);
 }
