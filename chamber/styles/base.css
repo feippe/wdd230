@@ -94,6 +94,7 @@ nav ul li a.active, nav ul li a.active:hover {
 }
 
 #main-banner {
+    background-color: var(--color-5);
     background-image: url(../images/dark-wood-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
