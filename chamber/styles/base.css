@@ -15,7 +15,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px auto auto 120px;
+    grid-template-rows: 60px auto auto auto;
     margin: 0;
     padding: 0;
     font-family: var(--font-body);
@@ -196,7 +196,11 @@ footer {
     text-align: center;
     padding-top: 32px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    font-size: 12px;
+}
+footer > div {
+    margin-bottom: 16px;
 }
 footer a {
     color: var(--color-6);
