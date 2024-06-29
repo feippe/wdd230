@@ -1,0 +1,186 @@
+:root {
+    --font-title: Prompt, Arial, Helvetica, sans-serif;
+    --font-body: Montserrat, Arial, Helvetica, sans-serif;
+    --color-1: #1b2c75;
+    --color-2: #ffcb01;
+    --color-3: #00b49d;
+    --color-4: #57598c;
+    --color-5: #252525;
+    --color-white: #FFFFFF;
+    --color-gray: #EFEFEF;
+    --color-black: #000000;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto auto 120px;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+}
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-title);
+}
+
+header {
+    background-color: var(--color-1);
+    color: var(--color-white);
+    display: grid;
+    grid-template-columns: 54px auto 54px;
+    grid-template-rows: 60px auto;
+    height: 60px;
+}
+#menu-icon {
+    text-align: center;
+    height: 44px;
+    margin: 8px 16px 0 16px;
+    padding-top: 8px;
+}
+#menu-icon .close-icon {
+    display: none;
+}
+#menu-icon.close .close-icon {
+    display: block;
+}
+#menu-icon.close .open-icon {
+    display: none;
+}
+#logo-header {
+    height: 44px;
+    margin: 8px 0;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+#logo-header-icon {
+    height: 100%;
+}
+#logo-header-icon img {
+    height: 100%;
+}
+#logo-header-text {
+    height: 44px;
+    line-height: 44px;
+    display: none;
+}
+nav {
+    grid-column: span 3;
+    grid-row: 2;
+    background-color: var(--color-4);
+    z-index: 1;
+    display: none;
+}
+nav.show {
+    display: block;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    padding: 8px 0;
+    color: var(--color-white);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+nav ul li a:hover {
+    background-color: var(--color-3);
+}
+nav ul li a.active, nav ul li a.active:hover {
+    background-color: var(--color-5);
+}
+
+#main-banner {
+    background-image: url(../images/dark-wood-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 16px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-align: center;
+    color: var(--color-white);
+}
+#main-banner h1 {
+    margin:16px auto 0 auto;
+}
+#main-banner p {
+    margin: 0;
+}
+#main-banner button {
+    border-radius: 100px;
+    padding: 8px 32px;
+    margin-top: 8px;
+    background-color: var(--color-white);
+    border: none;
+    color: var(--color-1);
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#main-banner button:hover {
+    background-color: var(--color-3);
+    color: var(--color-black);
+}
+
+main section {
+    border: solid 1px var(--color-3);
+    border-radius: 8px;
+    margin: 16px;
+}
+main section h2 {
+    background-color: var(--color-3);
+    margin: 0;
+    padding: 16px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+main section .card {
+    margin: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: var(--color-gray);
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 8px;
+}
+main section .card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+#advertisements {
+    margin: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    gap: 16px;
+}
+.adv {
+    background-color: var(--color-1);
+    color: var(--color-white);
+    padding: 32px 16px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+.adv:hover {
+    background-color: var(--color-3);
+    color: var(--color-black);
+    
+}
+
+footer {
+    background-color: var(--color-5);
+    color: var(--color-white);
+    text-align: center;
+    padding-top: 32px;
+}
+footer p {
+    margin: 0;
+}
