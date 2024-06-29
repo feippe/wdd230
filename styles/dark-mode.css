@@ -1,49 +1,54 @@
-:root {
-    --color-yellow-dark-mode: #FFCC0D;
-    --color-orange-dark-mode: #FF7326;
-    --color-red-dark-mode: #70071f;
-    --color-pink-dark-mode: #5a1432;
-    --color-violet-dark-mode: #4f1d63;
-    --color-link-dark-mode:#a9afff;
-    --color-white-dark-mode: #FFFFFF;
+@media (prefers-color-scheme: dark) {
 
-    --color-black-dark-mode: #000000;
-}
+    :root {
+        --color-yellow-dark-mode: #FFCC0D;
+        --color-orange-dark-mode: #FF7326;
+        --color-red-dark-mode: #70071f;
+        --color-pink-dark-mode: #5a1432;
+        --color-violet-dark-mode: #4f1d63;
+        --color-link-dark-mode:#a9afff;
+        --color-white-dark-mode: #FFFFFF;
 
-.dark-mode {
-    background-color: var(--color-black-dark-mode);
-    color: var(--color-white-dark-mode);
-}
-.dark-mode a {
-    color: var(--color-link-dark-mode);
-}
-.dark-mode .navigator a {
-    color: var(--color-white-dark-mode);
-}
+        --color-black-dark-mode: #000000;
+    }
 
-.dark-mode header {
-    background-color: var(--color-red-dark-mode);
-} 
-.dark-mode main section {
-    border-radius: 8px;
-    -webkit-box-shadow: 0px 0px 25px -11px rgba(255, 255, 255, 0.5);
-    -moz-box-shadow: 0px 0px 25px -11px rgba(255,255,255,0.5);
-    box-shadow: 0px 0px 25px -11px rgba(255,255,255,0.5);
-    padding-bottom: 16px;
-}
-.dark-mode main section h2 {
-    background-color: var(--color-red-dark-mode);
-}
+    .dark-mode {
+        background-color: var(--color-black-dark-mode);
+        color: var(--color-white-dark-mode);
+    }
+    .dark-mode a {
+        color: var(--color-link-dark-mode);
+    }
+    .dark-mode .navigator a {
+        color: var(--color-white-dark-mode);
+    }
 
-.dark-mode footer {
-    background-color: var(--color-pink-dark-mode);
-}
+    .dark-mode header {
+        background-color: var(--color-red-dark-mode);
+    } 
+    .dark-mode main section {
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 0px 25px -11px rgba(255, 255, 255, 0.5);
+        -moz-box-shadow: 0px 0px 25px -11px rgba(255,255,255,0.5);
+        box-shadow: 0px 0px 25px -11px rgba(255,255,255,0.5);
+        padding-bottom: 16px;
+    }
+    .dark-mode main section h2 {
+        background-color: var(--color-red-dark-mode);
+    }
 
-.dark-mode nav > ul > li > a {
-    border-bottom: solid 4px var(--color-pink-dark-mode);
-    background-color: var(--color-pink-dark-mode);
-}
-.dark-mode nav > ul > li > a.selected {
-    background-color: var(--color-violet-dark-mode);
-    border-bottom: solid 4px var(--color-violet-dark-mode);
+    .dark-mode footer {
+        background-color: var(--color-pink-dark-mode);
+    }
+
+    .dark-mode nav > ul > li > a {
+        border-bottom: solid 4px var(--color-pink-dark-mode);
+        background-color: var(--color-pink-dark-mode);
+    }
+    .dark-mode nav > ul > li > a.selected {
+        background-color: var(--color-violet-dark-mode);
+        border-bottom: solid 4px var(--color-violet-dark-mode);
+    }
+
+
 }
