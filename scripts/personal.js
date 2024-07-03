@@ -1,6 +1,9 @@
 window.onresize = function(event) {
     repositionBannerLabel();
 };
+document.addEventListener("DOMContentLoaded", function () {
+    repositionBannerLabel();
+});
 
 function repositionBannerLabel(){
     let bannerPosition = document.querySelector('.hero-banner').getBoundingClientRect();
