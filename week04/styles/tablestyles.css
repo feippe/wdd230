@@ -1,0 +1,48 @@
+:root {
+    --black: #000;
+    --black-light: #333;
+    --black-light2: #666;
+    --white: #FFF;
+    --odd: #EEE;
+    --even: #DDD;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+table {
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead th {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 8px 16px;
+    border: 1px solid var(--black);
+}
+
+thead tr + tr th:first-child ~ th {
+    background-color: var(--black-light);
+}
+
+tr:nth-child(even) {
+    background-color: var(--even);
+}
+tr:nth-child(odd) {
+    background-color: var(--odd);
+}
+
+tbody th, tbody td {
+    padding: 8px 16px;
+    border: 1px solid var(--black-light);
+}
+
+caption {
+    caption-side: bottom;
+}
