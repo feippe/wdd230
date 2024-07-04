@@ -15,5 +15,3 @@ function putLastModificationInFooter() {
     document.getElementById("lastModified").innerHTML = lastModification;
   }
 }
-
-

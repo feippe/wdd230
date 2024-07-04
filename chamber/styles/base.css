@@ -99,7 +99,6 @@ nav ul li a.active, nav ul li a.active:hover {
     background-image: url(../images/dark-wood-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    margin: 16px;
     border-radius: 8px;
     padding: 8px 16px;
     text-align: center;
@@ -127,10 +126,17 @@ nav ul li a.active, nav ul li a.active:hover {
     color: var(--color-black);
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 16px;
+    margin: 16px 16px 0 16px;
+}
+
 main section {
     border: solid 1px var(--color-3);
     border-radius: 8px;
-    margin: 16px;
 }
 main section h2 {
     background-color: var(--color-3);
@@ -211,4 +217,96 @@ footer a:hover {
 }
 footer p {
     margin: 0;
+}
+
+
+
+.discover-content {
+    grid-column: span 6;
+    grid-row: 1;
+}
+
+.discover-content .discover-content-img {
+    margin-bottom: 16px;
+    border-radius: 8px;
+    transition: transform .2s;
+}
+.discover-content .discover-content-img img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: auto;
+}
+.discover-content .discover-content-img span {
+    display: inline-block;
+    background-color: var(--color-1);
+    color: var(--color-white);
+    font-size: 14px;
+    padding: 8px 16px;
+    width: calc(100% - 32px);
+    border-radius: 0 0 8px 8px;
+    margin: -5px 0 0 0;
+}
+
+.discover-sidebar {
+    grid-column: span 6;
+    grid-row: 2;
+}
+.discover-sidebar-block {
+    border: solid 1px var(--color-4);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.discover-sidebar-block h4 {
+    background-color: var(--color-4);
+    color: var(--color-white);
+    margin: 0;
+    border-radius: 6px 6px 0 0;
+    padding: 8px 8px;
+    font-weight: 400;
+}
+.discover-sidebar-block p {
+    margin: 8px;
+}
+.discover-sidebar-block img {
+    width: calc(100% - 16px);
+    height: auto;
+    margin: 8px;
+}
+
+.discover-sidebar-block button {
+    width: calc(100% - 16px);
+    margin: 8px;
+}
+.discover-sidebar-block .secondary-button {
+    margin-top: 0;
+}
+
+.primary-button, .secondary-button {
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.primary-button {
+    background-color: var(--color-3);
+    border: solid 1px var(--color-3);
+    color: var(--color-black);
+}
+.primary-button:hover, .secondary-button:hover {
+    background-color: var(--color-5);
+    color: var(--color-white);
+    border: solid 1px var(--color-5);
+}
+.secondary-button {
+    border: solid 1px var(--color-3);
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.newsletter-input {
+    width: calc(100% - 32px - 2px);
+    margin: 8px 8px 0 8px;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: solid 1px var(--color-3);
 }
