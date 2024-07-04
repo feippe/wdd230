@@ -310,3 +310,8 @@ footer p {
     cursor: pointer;
     border: solid 1px var(--color-3);
 }
+.newsletter-label {
+    margin: 8px 8px 0 8px;
+    display: inline-block;
+    font-size: 14px;
+}
