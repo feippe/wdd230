@@ -1,0 +1,68 @@
+:root {
+    --color-valid: #43bd24;
+    --color-error: #f00;
+    --color-labels: #005fbe;
+    --color-border-inputs: #555;
+    --color-text-inputs: #222;
+    --color-black: #000;
+    --color-white: #FFF;
+    --color-button: #0d5717;
+    --color-button-hover: #197c27;
+}
+
+.form fieldset {
+    border: solid 1px var(--color-black);
+    border-radius: 4px;
+}
+.form legend {
+    color: var(--color-black);
+}
+.form label {
+    color: var(--color-labels);
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    margin-top: 8px;
+}
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"] {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: solid 1px var(--color-border-inputs);
+    color: var(--color-text-inputs);
+    display: block;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.form input:required {
+    border: solid 1px var(--color-error);
+    border-right: solid 8px var(--color-error);
+}
+.form input:required:valid {
+    border: solid 1px var(--color-valid);
+    border-right: solid 8px var(--color-valid);
+}
+.form input[type="range"]{
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.form #pageratingvalue {
+    position: absolute;
+    margin: 8px 0 0 8px;
+    display: inline-block;
+}
+.form input[type="submit"]{
+    background-color: var(--color-button);
+    color: var(--color-white);
+    width: 100%;
+    cursor: pointer;
+    margin: 16px 0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+}
+.form input[type="submit"]:hover{
+    background-color: var(--color-button-hover);
+}

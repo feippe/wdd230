@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/dark-mode.css">
+    <link rel="stylesheet" href="styles/form.css">
 
     
 </head>
@@ -42,56 +43,39 @@
     </div>
     <nav class="navigator">
         <ul>
-            <li><a href="#" class="selected">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="chamber">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="form.html">Form</a></li>
+            <li><a href="#" class="selected">Form</a></li>
         </ul>
     </nav>
     <main>
-        <div class="hero-banner">
-            <picture>
-                <source media="(max-width: 400px)" srcset="week03/images/columbia-temple/columbia-river-temple-lds-500.webp">
-                <source media="(max-width: 960px)" srcset="week03/images/columbia-temple/columbia-river-temple-lds-840.webp">
-                <img loading="lazy" src="week03/images/columbia-temple/columbia-river-temple-lds-1200.webp" alt="Temple Columbia, Washington, United States">
-            </picture>
-            <div class="hero-label">
-                <p>Columbia Temple</p>
-            </div>
-        </div>
-
-        <h1>WDD 230: Web Frontend Development</h1>
-        <section class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li>Week 01: <a href="week01/chamber-site-plan.html">Chamber Site Plan</a></li>
-                <li>Week 02: <a href="week02/design.html" target="_blank">Web Design</a> | <a href="https://codepen.io/Gabriel-Feippe/pen/bGyyPwN" target="_blank">CodePen</a> | <a href="week02/bom.html" target="_blank">BOM Top10</a></li>
-                <li>Week 03: <a href="week03/images/landscape.webp" target="_blank">WebP</a> | <a target="_blank" href="week03/lazyload.html">Lazy Load</a> | <a href="week03/responsive-images.html" target="_blank">Responsive Images</a> | <a target="_blank" href="week03/bom.html">BOM</a></li>
-                <li>Week 04: <a href="https://codepen.io/Gabriel-Feippe/pen/JjQPrjq" target="_blank">CSS Pseudo-Classes</a> | <a href="/week04/images/CSS-Combinators.jpg" target="_blank">CSS Combinators</a> | <a href="week04/tablebuild.html" target="_blank">Tables</a> | <a href="week04/form-start/index.html" target="_blank">Form</a></li>
-                <li>Week 05: <a href="#">data here</a></li>
-                <li>Week 06: <a href="#">data here</a></li>
-                <li>Week 07: <a href="#">data here</a></li>
-            </ul>
-        </section>
-        <section class="card-information">
-            <h2>Information</h2>
-            <ul>
-                <li>Montevideo, Uruguay</li>
-                <li>76ºF - Sunshine</li>
-                <li>Page Visits : <span id="counterVisits"></span></li>
-            </ul>
-        </section>
-        <div class="google-map">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d204.498629950788!2d-56.20619368536188!3d-34.9069996155246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suy!4v1720036526655!5m2!1sen!2suy" 
-                width="600" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-        </div>
+        <form class="form" method="get" action="record.html">
+            <fieldset>
+                <legend>Join us</legend>
+                <label>Username* <input type="text" id="txtUser" name="uname" required></label>
+                <label>Password* <input type="password" id="txtPassword" name="ppassword" required pattern="[A-Za-z0-9]{8,}" title="Must contain al least 8 characters"></label>
+                <label>Repeat Password* <input type="password" id="txtRepeatPassword" name="spassword" required pattern="[A-Za-z0-9]{8,}" title="Repeat the password"></label>
+                <label>Email* <input type="email" id="txtEmail" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" or [a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address"></label>
+                <label>Page Rating 
+                    <input type="range" id="rngPageRating" name="prating" min="1" max="10" value="6" step="1" list="pageratingvalues"> 
+                    <datalist id="pageratingvalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                    <div id="pageratingvalue">6</div>
+                </label>
+                <input type="submit" value="Join us">
+            </fieldset>
+        </form>
     </main>
    <footer>
     <p>&copy; <span id="footerYear"></span> | Gabriel Feippe | Uruguay <img id="flag" loading="lazy" src="images/flag_of_uruguay.webp" alt="Flag of Uruguay"></p>
@@ -101,7 +85,6 @@
    <script src="scripts/getDates.js"></script>
    <script src="scripts/menuHamburger.js"></script>
    <script src="scripts/dark-mode.js"></script>
-   <script src="scripts/personal.js"></script>
-   <script src="scripts/counterVisits.js"></script>
+   <script src="scripts/page-rating-range.js"></script>
 </body>
 </html>
