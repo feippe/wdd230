@@ -125,3 +125,10 @@
     background-color: var(--color-button-hover-dark-mode);
     color: var(--color-black);
 }
+
+
+.message-thank-you-page {
+    width: 100%;
+    grid-column: 1 / 4;
+    grid-row: 3;
+}
