@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uruguay Chamber of Commerce</title>
+    <meta name="description" content="Uruguay Chamber of Commerce site project">
+    <meta name="author" content="Gabriel Feippe">
+
+    <meta property="og:title" content="Uruguay Chamber of Commerce" >
+    <meta property="og:description" content="Uruguay Chamber of Commerce site project" >
+    <meta property="og:url" content="https://feippe.github.io/wdd230/chamber" >
+    <meta property="og:image" content="https://feippe.github.io/wdd230/images/3Aw5_Pa7_300x300.jpg" >
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+</head>
+<body>
+    <header>
+        <div id="menu-icon">
+            <img class="open-icon" src="images/bars-solid.svg" alt="Open menu">
+            <img class="close-icon" src="images/xmark-solid.svg" alt="Close menu">
+        </div>
+        <div id="logo-header">
+            <div id="logo-header-icon">
+                <img src="images/logo.png" alt="Uruguay Chamber of Commerce">
+            </div>
+            <div id="logo-header-text">Uruguay Chamber of Commerce</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Join page</h1>
+        <form method="get" action="thankyou.html" id="form-join-page">
+            <fieldset>
+                <legend>Join us</legend>
+                <label>First name <input type="text" required name="fname" id="fname"></label>
+                <label>Last name <input type="text" required name="lname" id="lname"></label>
+                <label>Title or position <input type="text" name="position" id="position" pattern="^[a-zA-Z\- ]{7,}$"></label>
+                <label>Email <input type="email" required name="email" id="email" placeholder="anexample@ofmail.com"></label>
+                <label>Phone number <input type="phone" required name="phone" id="phone"></label>
+                <label>Business/Organization's name <input type="text" required name="organization" id="organization"></label>
+                <label>Membership level</label>
+                <label class="radio"><input class="radio-level" type="radio" name="level" id="level-np" value="NP" title="NP Membership is for non profit organizations and there is no fee">NP Membership</label>
+                <label class="radio"><input class="radio-level" type="radio" name="level" id="level-bronze" value="Bronze">Bronze</label>
+                <label class="radio"><input class="radio-level" type="radio" name="level" id="level-silver" value="Silver">Silver</label>
+                <label class="radio"><input class="radio-level" type="radio" name="level" id="level-gold" value="Gold">Gold</label>
+                <label>Business/Organization description
+                    <textarea name="organizationdescription" id="organizationdescription"></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Join now">
+            </fieldset>
+
+        </form>
+        <fieldset class="cost-and-benefits">
+            <legend>Cost & Benefits</legend>
+
+            <div class="data-for-level" id="data-level-np">
+                <div class="cost">
+                    <span>FREE</span>
+                    <span>for ever</span>
+                </div>
+                <div class="benefits">
+                    <ul>
+                        <li><span>Lorem</span> ipsum dolor sit amet</li>
+                        <li><span>Consectetur</span> adipiscing elit</li>
+                        <li><span>Pellentesque</span> facilisis suscipit</li>
+                        <li><span>Nam</span> pharetra mi ipsum</li>
+                        <li><span>Non</span> sollicitudin sapien ornare eu</li>
+                        <li><span>Donec</span> finibus nunc at sapien</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="data-for-level" id="data-level-bronze">
+                <div class="cost">
+                    <span><span>$</span>123</span>
+                    <span>/month</span>
+                </div>
+                <div class="benefits">
+                    <ul>
+                        <li><span>Lorem</span> ipsum dolor sit amet</li>
+                        <li><span>Pellentesque</span> facilisis suscipit</li>
+                        <li><span>Consectetur</span> adipiscing elit</li>
+                        <li><span>Nam</span> pharetra mi ipsum</li>
+                        <li><span>Donec</span> finibus nunc at sapien</li>
+                        <li><span>Non</span> sollicitudin sapien ornare eu</li>
+                        <li><span>Consectetur</span> adipiscing elit</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="data-for-level" id="data-level-silver">
+                <div class="cost">
+                    <span><span>$</span>234</span>
+                    <span>/month</span>
+                </div>
+                <div class="benefits">
+                    <ul>
+                        
+                        <li><span>Consectetur</span> adipiscing elit</li>
+                        <li><span>Lorem</span> ipsum dolor sit amet</li>
+                        <li><span>Pellentesque</span> facilisis suscipit</li>
+                        <li><span>Non</span> sollicitudin sapien ornare eu</li>
+                        <li><span>Nam</span> pharetra mi ipsum</li>
+                        <li><span>Donec</span> finibus nunc at sapien</li>
+                        <li><span>Pellentesque</span> facilisis suscipit</li>
+                        <li><span>Lorem</span> ipsum dolor sit amet</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="data-for-level" id="data-level-gold">
+                <div class="cost">
+                    <span><span>$</span>345</span>
+                    <span>/month</span>
+                </div>
+                <div class="benefits">
+                    <ul>
+                        <li><span>Donec</span> finibus nunc at sapien</li>
+                        <li><span>Nam</span> pharetra mi ipsum</li>
+                        <li><span>Pellentesque</span> facilisis suscipit</li>
+                        <li><span>Consectetur</span> adipiscing elit</li>
+                        <li><span>Non</span> sollicitudin sapien ornare eu</li>
+                        <li><span>Lorem</span> ipsum dolor sit amet</li>
+                        <li><span>Donec</span> finibus nunc at sapien</li>
+                        <li><span>Pellentesque</span> facilisis suscipit</li>
+                        <li><span>Non</span> sollicitudin sapien ornare eu</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </fieldset>
+    </main>
+    <div id="advertisements">
+        <a href="#" class="adv">National accounts</a>
+        <a href="#" class="adv">Economic Bulletin</a>
+        <a href="#" class="adv">Commerce & Services Survey</a>
+    </div>
+    <footer>
+        <div>
+            <p>Rincón 454 P.2, Montevideo, Uruguay</p>
+            <p><a href="tel:+59829161277">(598) 2916 1277</a></p>
+            <p><a href="tel:+59829161243">(598) 2916 1243</a></p>
+        </div>
+        <div>
+            <p>Gabriel Feippe</p>
+            <p>This is a project for WDD 230</p>
+            <p id="lastModification"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

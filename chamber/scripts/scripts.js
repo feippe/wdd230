@@ -46,3 +46,42 @@ function setLastVisit(){
 }
 
 
+
+/* JOIN PAGE FUNCTIONS */
+
+if(document.querySelector('#level-np')!==null){
+    document.querySelector('#level-np').addEventListener('click',function(){
+        radioLevelSelected(this.value);
+    });
+    document.querySelector('#level-bronze').addEventListener('click',function(){
+        radioLevelSelected(this.value);
+    });
+    document.querySelector('#level-silver').addEventListener('click',function(){
+        radioLevelSelected(this.value);
+    });
+    document.querySelector('#level-gold').addEventListener('click',function(){
+        radioLevelSelected(this.value);
+    });
+}
+
+
+function radioLevelSelected(value){
+    document.querySelector('#data-level-np').style.display='none';
+    document.querySelector('#data-level-bronze').style.display='none';
+    document.querySelector('#data-level-silver').style.display='none';
+    document.querySelector('#data-level-gold').style.display='none';
+    switch(value) {
+        case 'NP':
+            document.querySelector('#data-level-np').style.display='block';
+            break;
+        case 'Bronze':
+            document.querySelector('#data-level-bronze').style.display='block';
+            break;
+        case 'Silver':
+            document.querySelector('#data-level-silver').style.display='block';
+            break;
+        case 'Gold':
+            document.querySelector('#data-level-gold').style.display='block';
+            break;
+      }
+}

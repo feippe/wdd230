@@ -110,7 +110,9 @@ nav ul li a.active, nav ul li a.active:hover {
 #main-banner p {
     margin: 0;
 }
-#main-banner button {
+#main-banner button,
+#main-banner a {
+    display: inline-block;
     border-radius: 100px;
     padding: 8px 32px;
     margin-top: 8px;
@@ -120,8 +122,10 @@ nav ul li a.active, nav ul li a.active:hover {
     font-size: 12px;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
 }
-#main-banner button:hover {
+#main-banner button:hover,
+#main-banner a:hover {
     background-color: var(--color-3);
     color: var(--color-black);
 }
@@ -314,4 +318,120 @@ footer p {
     margin: 8px 8px 0 8px;
     display: inline-block;
     font-size: 14px;
+}
+
+
+
+/*JOIN PAGE*/
+h1 {
+    grid-column: span 6;
+    margin-top: 32px;
+}
+#form-join-page {
+    grid-column: span 6;
+
+    fieldset {
+        border-radius: 8px;
+        padding: 16px;
+
+        label {
+            display: block;
+            font-size: 14px;
+            color: var(--color-1);
+            margin-top: 16px;
+
+            input[type="text"],
+            input[type="phone"],
+            input[type="email"],
+            textarea {
+                display: block;
+                width: calc(100% - 36px);
+                padding: 8px 16px;
+                border-radius: 4px;
+                border: solid 1px var(--color-5);
+                margin: 4px 0 16px 0;
+            }
+        }
+        label.radio {
+            color: var(--color-5);
+            margin-top: 8px;
+            cursor: pointer;
+
+            input {
+                margin-right: 8px;
+            }
+        }
+        label.radio:last-child {
+            margin-bottom: 16px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            cursor: pointer;
+            background-color: var(--color-3);
+            border: none;
+            border-radius: 4px;
+            color: var(--color-black);
+        }
+        input[type="submit"]:hover {
+            background-color: var(--color-2);
+        }
+    }
+}
+.cost-and-benefits {
+    border-radius: 8px;
+    grid-column: span 6;
+    padding: 16px;
+
+    .data-for-level {
+        display: none;
+    }
+
+    .cost {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        > span:first-child {
+            font-size: 36px;
+            display: block;
+        }
+        span:last-child {
+            font-size: 14px;
+        }
+    }
+
+    .benefits {
+        display: block;
+        width: 100%;
+        text-align: left;
+
+        ul {
+            margin: 32px -16px 0 -16px;
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin: 0;
+                color: var(--color-5);
+                border-left: solid 5px var(--color-white);
+                padding: 8px 8px;
+                cursor: default;
+                transition: all 0.3s ease-in-out 0s;
+
+                > span {
+                    color: var(--color-1);
+                }
+            }
+            li:hover {
+                background-color: var(--color-gray);
+                border-left: 5px solid var(--color-2);
+            }
+        }
+
+    }
+}
+.thankyoupage-message {
+    grid-column: span 6;
+    margin: 0 0 32px 0;
 }
