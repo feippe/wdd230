@@ -85,3 +85,7 @@ function radioLevelSelected(value){
             break;
       }
 }
+
+if(document.querySelector('#timestamp')!==null){
+    document.querySelector('#timestamp').value = Date.now();
+}
