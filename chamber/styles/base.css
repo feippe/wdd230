@@ -10,6 +10,8 @@
     --color-white: #FFFFFF;
     --color-gray: #EFEFEF;
     --color-black: #000000;
+    --color-error: #F00;
+    --color-valid: rgb(29, 192, 56);
 }
 
 body {
@@ -350,6 +352,16 @@ h1 {
                 border-radius: 4px;
                 border: solid 1px var(--color-5);
                 margin: 4px 0 16px 0;
+            }
+            input:required {
+                border: solid 1px var(--color-error);
+                border-right: solid 8px var(--color-error);
+                width: calc(100% - 44px);
+            }
+            input:required:valid {
+                border: solid 1px var(--color-valid);
+                border-right: solid 8px var(--color-valid);
+                width: calc(100% - 44px);
             }
         }
         label.radio {
