@@ -323,7 +323,6 @@ footer p {
 }
 
 
-
 /*JOIN PAGE*/
 h1 {
     grid-column: span 6;
@@ -331,117 +330,105 @@ h1 {
 }
 #form-join-page {
     grid-column: span 6;
-
-    fieldset {
-        border-radius: 8px;
-        padding: 16px;
-
-        label {
-            display: block;
-            font-size: 14px;
-            color: var(--color-1);
-            margin-top: 16px;
-
-            input[type="text"],
-            input[type="phone"],
-            input[type="email"],
-            textarea {
-                display: block;
-                width: calc(100% - 36px);
-                padding: 8px 16px;
-                border-radius: 4px;
-                border: solid 1px var(--color-5);
-                margin: 4px 0 16px 0;
-            }
-            input:required {
-                border: solid 1px var(--color-error);
-                border-right: solid 8px var(--color-error);
-                width: calc(100% - 44px);
-            }
-            input:required:valid {
-                border: solid 1px var(--color-valid);
-                border-right: solid 8px var(--color-valid);
-                width: calc(100% - 44px);
-            }
-        }
-        label.radio {
-            color: var(--color-5);
-            margin-top: 8px;
-            cursor: pointer;
-
-            input {
-                margin-right: 8px;
-            }
-        }
-        label.radio:last-child {
+}
+#form-join-page fieldset {
+    border-radius: 8px;
+    padding: 16px;
+}
+#form-join-page fieldset label {
+    display: block;
+    font-size: 14px;
+    color: var(--color-1);
+    margin-top: 16px;
+}
+#form-join-page fieldset label input[type="text"],
+#form-join-page fieldset label input[type="phone"],
+#form-join-page fieldset label input[type="email"],
+#form-join-page fieldset label textarea {
+    display: block;
+    width: calc(100% - 36px);
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: solid 1px var(--color-5);
+    margin: 4px 0 16px 0;
+}
+#form-join-page fieldset label input:required {
+    border: solid 1px var(--color-error);
+    border-right: solid 8px var(--color-error);
+    width: calc(100% - 44px);
+}
+#form-join-page fieldset label input:required:valid {
+    border: solid 1px var(--color-valid);
+    border-right: solid 8px var(--color-valid);
+    width: calc(100% - 44px);
+}
+#form-join-page fieldset label.radio {
+    color: var(--color-5);
+    margin-top: 8px;
+    cursor: pointer;
+}
+#form-join-page fieldset label.radio input {
+    margin-right: 8px;
+}
+#form-join-page fieldset label.radio:last-child {
             margin-bottom: 16px;
-        }
-        input[type="submit"] {
-            width: 100%;
-            padding: 8px;
-            cursor: pointer;
-            background-color: var(--color-3);
-            border: none;
-            border-radius: 4px;
-            color: var(--color-black);
-        }
-        input[type="submit"]:hover {
-            background-color: var(--color-2);
-        }
-    }
+}
+#form-join-page fieldset input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    background-color: var(--color-3);
+    border: none;
+    border-radius: 4px;
+    color: var(--color-black);
+}
+#form-join-page fieldset input[type="submit"]:hover {
+    background-color: var(--color-2);
 }
 .cost-and-benefits {
     border-radius: 8px;
     grid-column: span 6;
     padding: 16px;
-
-    .data-for-level {
-        display: none;
-    }
-
-    .cost {
-        display: block;
-        width: 100%;
-        text-align: center;
-
-        > span:first-child {
-            font-size: 36px;
-            display: block;
-        }
-        span:last-child {
-            font-size: 14px;
-        }
-    }
-
-    .benefits {
-        display: block;
-        width: 100%;
-        text-align: left;
-
-        ul {
-            margin: 32px -16px 0 -16px;
-            padding: 0;
-            list-style: none;
-
-            li {
-                margin: 0;
-                color: var(--color-5);
-                border-left: solid 5px var(--color-white);
-                padding: 8px 8px;
-                cursor: default;
-                transition: all 0.3s ease-in-out 0s;
-
-                > span {
-                    color: var(--color-1);
-                }
-            }
-            li:hover {
-                background-color: var(--color-gray);
-                border-left: 5px solid var(--color-2);
-            }
-        }
-
-    }
+}
+.cost-and-benefits .data-for-level {
+    display: none;
+}
+.cost-and-benefits .cost {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.cost-and-benefits .cost > span:first-child {
+    font-size: 36px;
+    display: block;
+}
+.cost-and-benefits .cost span:last-child {
+    font-size: 14px;
+}
+.cost-and-benefits .benefits {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.cost-and-benefits .benefits ul {
+    margin: 32px -16px 0 -16px;
+    padding: 0;
+    list-style: none;
+}
+.cost-and-benefits .benefits ul li {
+    margin: 0;
+    color: var(--color-5);
+    border-left: solid 5px var(--color-white);
+    padding: 8px 8px;
+    cursor: default;
+    transition: all 0.3s ease-in-out 0s;
+}
+.cost-and-benefits .benefits ul li > span {
+    color: var(--color-1);
+}         
+.cost-and-benefits .benefits  li:hover {
+    background-color: var(--color-gray);
+    border-left: 5px solid var(--color-2);
 }
 .thankyoupage-message {
     grid-column: span 6;
