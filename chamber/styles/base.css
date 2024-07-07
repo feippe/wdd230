@@ -342,7 +342,7 @@ h1 {
     margin-top: 16px;
 }
 #form-join-page fieldset label input[type="text"],
-#form-join-page fieldset label input[type="phone"],
+#form-join-page fieldset label input[type="tel"],
 #form-join-page fieldset label input[type="email"],
 #form-join-page fieldset label textarea {
     display: block;
