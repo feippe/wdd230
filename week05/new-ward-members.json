@@ -1,0 +1,33 @@
+{
+    "familyName": "Stuart",
+    "movedDate": "2018-08-31",
+    "numberPeople": 5,
+    "visitedBishopric": false,
+    "members": [
+        {
+            "name": "Juan",
+            "gender": "male",
+            "birthdate": "11-29"
+        },
+        {
+            "name": "Maria",
+            "gender": "female",
+            "birthdate": "03-21"
+        },
+        {
+            "name": "Fabian",
+            "gender": "male",
+            "birthdate": "10-10"
+        },
+        {
+            "name": "Claudio",
+            "gender": "male",
+            "birthdate": "02-21"
+        },
+        {
+            "name": "Laura",
+            "gender": "female",
+            "birthdate": "01-17"
+        }
+    ]
+}
