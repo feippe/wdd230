@@ -1,0 +1,39 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    font-weight: normal;
+    text-align: center;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: space-between;
+    gap: 8px;
+}
+
+#cards section {
+    flex-basis: calc(25% - 40px);
+    overflow: hidden;
+    padding: 16px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#cards section h2 {
+    font-size:16px;
+    height: 44px;
+}
+
+#cards section p {
+    font-size: 12px;
+    margin: 0;
+}
+
+#cards section img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin: 16px 0;
+}
