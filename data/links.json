@@ -14,15 +14,18 @@
             "links": [
                 {
                     "url":"week02/design.html",
-                    "title": "Web Design"
+                    "title": "Web Design",
+                    "target": "_blank"
                 },
                 {
                     "url":"https://codepen.io/Gabriel-Feippe/pen/bGyyPwN",
-                    "title": "CodePen"
+                    "title": "CodePen",
+                    "target": "_blank"
                 },
                 {
                     "url":"week02/bom.html",
-                    "title": "BOM Top10"
+                    "title": "BOM Top10",
+                    "target": "_blank"
                 }
             ]
         },
@@ -31,19 +34,23 @@
             "links": [
                 {
                     "url":"week03/images/landscape.webp",
-                    "title": "Web Design"
+                    "title": "Landscape",
+                    "target": "_blank"
                 },
                 {
                     "url":"week03/lazyload.html",
-                    "title": "Lazy Load"
+                    "title": "Lazy Load",
+                    "target": "_blank"
                 },
                 {
                     "url":"week03/responsive-images.html",
-                    "title": "Responsive Images"
+                    "title": "Responsive Images",
+                    "target": "_blank"
                 },
                 {
                     "url":"week03/bom.html",
-                    "title": "BOM"
+                    "title": "BOM",
+                    "target": "_blank"
                 }
             ]
         },
@@ -52,19 +59,23 @@
             "links": [
                 {
                     "url":"https://codepen.io/Gabriel-Feippe/pen/JjQPrjq",
-                    "title": "CSS Pseudo-Classes"
+                    "title": "CSS Pseudo-Classes",
+                    "target": "_blank"
                 },
                 {
                     "url":"week04/images/CSS-Combinators.jpg",
-                    "title": "CSS Combinators"
+                    "title": "CSS Combinators",
+                    "target": "_blank"
                 },
                 {
                     "url":"week04/tablebuild.html",
-                    "title": "Tables"
+                    "title": "Tables",
+                    "target": "_blank"
                 },
                 {
                     "url":"week04/form-start/index.html",
-                    "title": "Form"
+                    "title": "Form",
+                    "target": "_blank"
                 }
             ]
         },
@@ -73,19 +84,23 @@
             "links": [
                 {
                     "url":"https://codepen.io/Gabriel-Feippe/pen/mdZJqqW",
-                    "title": "CodePen"
+                    "title": "CodePen",
+                    "target": "_blank"
                 },
                 {
                     "url":"week05/new-ward-members.json",
-                    "title": "JSON"
+                    "title": "JSON",
+                    "target": "_blank"
                 },
                 {
                     "url":"week05/prophets.html",
-                    "title": "Prophets"
+                    "title": "Prophets",
+                    "target": "_blank"
                 },
                 {
                     "url":"week05/weather.html",
-                    "title": "Weather"
+                    "title": "Weather",
+                    "target": "_blank"
                 }
             ]
         }
