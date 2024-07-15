@@ -121,6 +121,19 @@ main section.card-information {
     grid-row: 4;
 }
 
+main section.card > ul > li > a {
+    font-size: 14px;
+}
+main section.card > ul > li > a:hover {
+    color: var(--color-orange);
+}
+main section.card > ul > li > a:not(:last-child):after {
+    content: "|";
+    margin: 0 4px;
+    color: var(--color-black);
+    text-decoration: none;
+}
+
 main section.card-information ul {
     text-align: center;
 }
