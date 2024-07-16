@@ -12,6 +12,10 @@
     --color-black: #000000;
     --color-error: #F00;
     --color-valid: rgb(29, 192, 56);
+
+    --color-gold: #FFD700;
+    --color-silver: #C0C0C0;
+    --color-bronze: #CD7F32;
 }
 
 body {
@@ -138,13 +142,14 @@ main {
     grid-template-rows: auto auto auto;
     gap: 16px;
     margin: 16px 16px 0 16px;
+    width: 100%;
 }
 
-main section {
+main > section {
     border: solid 1px var(--color-3);
     border-radius: 8px;
 }
-main section h2 {
+main > section h2 {
     background-color: var(--color-3);
     margin: 0;
     padding: 16px;
@@ -152,7 +157,7 @@ main section h2 {
     border-top-right-radius: 5px;
 }
 
-main section .card {
+main > section .card {
     margin: 16px;
     padding: 8px;
     border-radius: 4px;
@@ -161,21 +166,21 @@ main section .card {
     grid-template-columns: 100px auto;
     gap: 8px;
 }
-main section .card.weather {
+main > section .card.weather {
     grid-template-columns: 204px auto;
     grid-template-rows: auto auto;
 }
 
-main section .card img {
+main > section .card img {
     width: 100%;
     border-radius: 4px;
 }
-main section .card.weather img {
+main > section .card.weather img {
     grid-row: span 2;
     justify-self: center;
 }
 
-main section .card.weather h3 {
+main > section .card.weather h3 {
     grid-column: 2;
 }
 
@@ -433,4 +438,125 @@ h1 {
 .thankyoupage-message {
     grid-column: span 6;
     margin: 0 0 32px 0;
+}
+
+
+.mainContent {
+    grid-column: span 6;
+    margin: 32px;
+}
+
+.listOrGrid.grid {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 8px;
+	justify-content: space-between;
+}
+
+.listOrGrid.grid > section {
+    overflow: hidden;
+    padding: 16px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+.listOrGrid.list > section {
+    overflow: hidden;
+    padding: 16px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 18px 32px 32px 32px;
+    margin-bottom: 8px;
+}
+
+.listOrGrid .tagLevel {
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 8px;
+    color: var(--color-white);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.listOrGrid .tagLevel.Gold {
+    background-color: var(--color-gold)
+}
+.listOrGrid .tagLevel.Silver {
+    background-color: var(--color-silver)
+}
+.listOrGrid .tagLevel.Bronze {
+    background-color: var(--color-bronze)
+}
+
+
+
+.listOrGrid > section > .iconSpace {
+    text-align: center;
+}
+.listOrGrid.list > section > .iconSpace {
+    grid-column: 1;
+    grid-row: span 2;
+    margin-top: 8px;
+}
+.listOrGrid > section > .iconSpace > i {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.listOrGrid .nameSpace {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.listOrGrid.list .nameSpace {
+    grid-column: 1;
+}
+
+.listOrGrid .phoneSpace {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.listOrGrid.list .phoneSpace {
+    grid-area: 2 / 2 / 2 / 4;
+}
+
+.listOrGrid .addressSpace {
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.listOrGrid.list .addressSpace {
+    grid-area: 3 / 2 / 3 / 4;
+}
+
+.listOrGrid .urlSpace {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.listOrGrid.list .urlSpace {
+    grid-area: 4 / 2 / 4 / 4;
+}
+
+.mainContent button {
+    border: none;
+    background: none;
+    background-color: var(--color-4);
+    color: var(--color-white);
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin:0 8px 32px 0;
+    cursor: pointer;
+}
+.mainContent button.selected {
+    background-color: var(--color-2);
 }

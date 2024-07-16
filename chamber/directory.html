@@ -35,62 +35,19 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#" class="active">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="main-banner">
-            <h1>Uruguay Chamber of Commerce</h1>
-            <p>We ensure the general interest of commerce and private sector services.</p>
-            <div>
-                <a href="join.html">Join us now</a>
-            </div>
+        <div class="mainContent">
+            <button onclick="showGridMembers(this)" class="selected"><i class="fa-solid fa-grip"></i></button>
+            <button onclick="showListMembers(this)"><i class="fa-solid fa-bars-staggered"></i></button>
+            <div id="membersList" class="listOrGrid grid"></div>
         </div>
-        <section>
-            <h2>Current events</h2>
-            <div class="card">
-                <img src="images/park-pic.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="card">
-                <img src="images/park-pic.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="card">
-                <img src="images/park-pic.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="card">
-                <img src="images/park-pic.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="card">
-                <img src="images/park-pic.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </section>
-        <section>
-            <h2>Weather</h2>
-            <div class="card weather">
-                <img src="images/park-pic.jpg" alt="">
-                <h3>Yesterday</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="card weather">
-                <img src="images/park-pic.jpg" alt="">
-                <h3>Today</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="card weather">
-                <img src="images/park-pic.jpg" alt="">
-                <h3>Tomorrow</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </section>
     </main>
     <div id="advertisements">
         <a href="#" class="adv">National accounts</a>
@@ -111,5 +68,7 @@
     </footer>
 
     <script src="scripts/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/64bae2eb6d.js" crossorigin="anonymous"></script>
+    <script src="scripts/members.js"></script>
 </body>
 </html>
