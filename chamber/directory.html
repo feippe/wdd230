@@ -43,9 +43,10 @@
         </nav>
     </header>
     <main>
+        <h1>Members Directory</h1>
         <div class="mainContent">
-            <button onclick="showGridMembers(this)" class="selected"><i class="fa-solid fa-grip"></i></button>
-            <button onclick="showListMembers(this)"><i class="fa-solid fa-bars-staggered"></i></button>
+            <button onclick="showGridMembers(this)" class="selected" value="Show grid"><i class="fa-solid fa-grip"></i></button>
+            <button onclick="showListMembers(this)" value="Show list"><i class="fa-solid fa-bars-staggered"></i></button>
             <div id="membersList" class="listOrGrid grid"></div>
         </div>
     </main>

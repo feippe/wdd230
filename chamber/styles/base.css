@@ -29,6 +29,9 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: var(--font-title);
 }
+h1 {
+    text-align: center;
+}
 
 header {
     background-color: var(--color-1);
@@ -480,13 +483,19 @@ h1 {
 }
 
 .listOrGrid .tagLevel.Gold {
-    background-color: var(--color-gold)
+    border: solid 2px var(--color-gold);
+    background-color: var(--color-white);
+    color: var(--color-5);
 }
 .listOrGrid .tagLevel.Silver {
-    background-color: var(--color-silver)
+    border: solid 2px var(--color-silver);
+    background-color: var(--color-white);
+    color: var(--color-5);
 }
 .listOrGrid .tagLevel.Bronze {
-    background-color: var(--color-bronze)
+    border: solid 2px var(--color-bronze);
+    background-color: var(--color-white);
+    color: var(--color-5);
 }
 
 
