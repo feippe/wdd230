@@ -12,6 +12,7 @@
     --color-black: #000000;
     --color-error: #F00;
     --color-valid: rgb(29, 192, 56);
+    --color-selected: #00806F;
 
     --color-gold: #FFD700;
     --color-silver: #C0C0C0;
@@ -567,5 +568,5 @@ h1 {
     cursor: pointer;
 }
 .mainContent button.selected {
-    background-color: var(--color-2);
+    background-color: var(--color-selected);
 }
