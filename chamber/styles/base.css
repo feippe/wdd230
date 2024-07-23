@@ -146,7 +146,6 @@ main {
     grid-template-rows: auto auto auto;
     gap: 16px;
     margin: 16px 16px 0 16px;
-    width: 100%;
 }
 
 main > section {
@@ -165,7 +164,7 @@ main > section .card {
     margin: 16px;
     padding: 8px;
     border-radius: 4px;
-    background-color: var(--color-gray);
+    border: solid 1px var(--color-gray);
     display: grid;
     grid-template-columns: 100px auto;
     gap: 8px;
@@ -186,6 +185,10 @@ main > section .card.weather img {
 
 main > section .card.weather h3 {
     grid-column: 2;
+}
+
+#weather-section .card p {
+    text-transform: capitalize;
 }
 
 #advertisements {
@@ -569,4 +572,71 @@ h1 {
 }
 .mainContent button.selected {
     background-color: var(--color-selected);
+}
+
+.card-weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.card-weather > div > img {
+    display: block;
+    margin: 16px auto 0 auto;
+}
+.card-weather > div > h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+.card-weather .pTemp {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+.card-weather .pDesc {
+    margin-top: 0;
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0 16px 32px 16px;
+}
+
+
+
+.spotlightMember {
+    background-color: var(--color-gray);
+    margin: 0 8px 8px 8px;
+    width: calc(100% - 48px);
+    border-radius: 8px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 32px auto auto auto;
+}
+.spotlightMember:first-child {
+    margin-top: 8px;
+}
+.spotlightMember .tagLevel {
+    display: none;
+}
+
+.spotlightMember .iconSpace {
+    grid-area: 1 / 1 / 5 / 2;
+    font-size: 56px;
+    padding-top: 16px;
+    text-align: center;
+}
+.spotlightMember .nameSpace {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.spotlightMember .phoneSpace,
+.spotlightMember .addressSpace,
+.spotlightMember .urlSpace {
+    text-align: center;
+    font-size: 14px;
 }

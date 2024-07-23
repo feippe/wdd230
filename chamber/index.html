@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/modal-banner.css">
 
 </head>
 <body>
@@ -42,7 +43,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main-home">
         <div id="main-banner">
             <h1>Uruguay Chamber of Commerce</h1>
             <p>We ensure the general interest of commerce and private sector services.</p>
@@ -73,23 +74,13 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </section>
-        <section>
+        <section id="weather-section">
             <h2>Weather</h2>
-            <div class="card weather">
-                <img src="images/park-pic.jpg" alt="">
-                <h3>Yesterday</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="card weather">
-                <img src="images/park-pic.jpg" alt="">
-                <h3>Today</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="card weather">
-                <img src="images/park-pic.jpg" alt="">
-                <h3>Tomorrow</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
+            <div class="card-weather"></div>
+        </section>
+        <section class="spotlight-section">
+            <h2>Spotlight</h2>
+            <div class="spotlight-content"></div>
         </section>
     </main>
     <div id="advertisements">
@@ -111,5 +102,9 @@
     </footer>
 
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="https://kit.fontawesome.com/64bae2eb6d.js" crossorigin="anonymous"></script>
+    <script src="scripts/modal-banner.js"></script>
 </body>
 </html>
