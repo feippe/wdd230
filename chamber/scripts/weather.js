@@ -2,7 +2,6 @@ const apiKey = '023f436055ba9902e9b75475c0609668';
 const lat = '-34.90809556342869';
 const lon = '-56.20471091841375';
 
-//const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial&lang=en`;
 const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appId=${apiKey}&units=imperial&lang=en`;
 const urlImage = 'https://openweathermap.org/img/wn/';
 
@@ -32,9 +31,6 @@ function displayResults(data){
             let temp = Math.round(day.main.temp);
             let icon = day.weather[0].icon;
             let description = day.weather[0].description;
-            //let humidity = day.main.humidity;
-            //let pressure = day.main.pressure;
-            //let feels_like = day.main.feels_like;
 
             let dayCard = document.createElement('div');
             
@@ -50,7 +46,6 @@ function displayResults(data){
             h3.innerHTML = `${dt.toLocaleDateString("en-US",optionsDate)}`;
             dayCard.append(h3);
 
-            //p.innerHTML = `<b>${temp}&deg;F</b><br>${description}<br/>Humidity: ${humidity}%<br/>Pressure: ${pressure} in<br/>Feels like: ${feels_like}&deg;F`;
             let p = document.createElement('p');
             p.className = 'pTemp';
             p.innerHTML = `${temp}&deg;F`;
