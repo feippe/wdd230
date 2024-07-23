@@ -41,6 +41,8 @@ function displayResults(data){
             let img = document.createElement('img');
             img.setAttribute('src',`${urlImage}${icon}.png`);
             img.setAttribute('alt',description);
+            img.setAttribute('width','50');
+            img.setAttribute('height','50');
             dayCard.append(img);
 
             let optionsDate = { weekday: 'short', month: 'short', day: 'numeric' };
