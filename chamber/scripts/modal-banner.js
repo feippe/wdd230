@@ -48,8 +48,6 @@ function loadModalBanner(){
 
 
 let today = new Date();
-console.log(today.getDay());
-
 if(today.getDay()== 1 || today.getDay()== 2 || today.getDay()== 3){
     loadModalBanner();
 }
