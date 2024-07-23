@@ -54,7 +54,7 @@
                 <label>Phone number* <input type="tel" required name="phone" id="phone"></label>
                 <label>Business/Organization's name* <input type="text" required name="organization" id="organization"></label>
                 <label>Membership level</label>
-                <label class="radio"><input class="radio-level" type="radio" name="level" id="level-np" value="NP" title="NP Membership is for non profit organizations and there is no fee">NP Membership</label>
+                <label class="radio"><input class="radio-level" checked type="radio" name="level" id="level-np" value="NP" title="NP Membership is for non profit organizations and there is no fee">NP Membership</label>
                 <label class="radio"><input class="radio-level" type="radio" name="level" id="level-bronze" value="Bronze">Bronze</label>
                 <label class="radio"><input class="radio-level" type="radio" name="level" id="level-silver" value="Silver">Silver</label>
                 <label class="radio"><input class="radio-level" type="radio" name="level" id="level-gold" value="Gold">Gold</label>
@@ -70,6 +70,9 @@
             <legend>Cost & Benefits</legend>
 
             <div class="data-for-level" id="data-level-np">
+                <div>
+                    <label>To see other benefits select another membership level.</label>
+                </div>
                 <div class="cost">
                     <span>FREE</span>
                     <span>for ever</span>
@@ -87,6 +90,9 @@
             </div>
             
             <div class="data-for-level" id="data-level-bronze">
+                <div>
+                    <label>To see other benefits select another membership level.</label>
+                </div>
                 <div class="cost">
                     <span><span>$</span>123</span>
                     <span>/month</span>
@@ -105,6 +111,9 @@
             </div>
 
             <div class="data-for-level" id="data-level-silver">
+                <div>
+                    <label>To see other benefits select another membership level.</label>
+                </div>
                 <div class="cost">
                     <span><span>$</span>234</span>
                     <span>/month</span>
@@ -125,6 +134,9 @@
             </div>
 
             <div class="data-for-level" id="data-level-gold">
+                <div>
+                    <label>To see other benefits select another membership level.</label>
+                </div>
                 <div class="cost">
                     <span><span>$</span>345</span>
                     <span>/month</span>
@@ -166,5 +178,6 @@
     </footer>
 
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 </html>
