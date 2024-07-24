@@ -46,15 +46,15 @@ function displayResults(data){
             h3.innerHTML = `${dt.toLocaleDateString("en-US",optionsDate)}`;
             dayCard.append(h3);
 
-            let p = document.createElement('p');
-            p.className = 'pTemp';
-            p.innerHTML = `${temp}&deg;F`;
-            dayCard.append(p);
+            let h4 = document.createElement('h4');
+            h4.className = 'pTemp';
+            h4.innerHTML = `${temp}&deg;F`;
+            dayCard.append(h4);
 
-            let p2 = document.createElement('p');
-            p2.className = 'pDesc';
-            p2.innerHTML = `${description}`;
-            dayCard.append(p2);
+            let p = document.createElement('p');
+            p.className = 'pDesc';
+            p.innerHTML = `${description}`;
+            dayCard.append(p);
 
             document.querySelector('.card-weather').append(dayCard);
         }
