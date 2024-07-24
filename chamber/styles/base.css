@@ -596,7 +596,7 @@ h1 {
 .card-weather .pTemp {
     display: block;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     margin: 0;
 }
