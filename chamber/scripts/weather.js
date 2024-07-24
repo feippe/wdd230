@@ -33,27 +33,28 @@ function displayResults(data){
             let description = day.weather[0].description;
 
             let dayCard = document.createElement('div');
-            
-            let img = document.createElement('img');
-            img.setAttribute('src',`${urlImage}${icon}.png`);
-            img.setAttribute('alt',description);
-            img.setAttribute('width','50');
-            img.setAttribute('height','50');
-            dayCard.append(img);
 
             let optionsDate = { weekday: 'short', month: 'short', day: 'numeric' };
             let h3 = document.createElement('h3');
             h3.innerHTML = `${dt.toLocaleDateString("en-US",optionsDate)}`;
-            dayCard.append(h3);
-
+            
+            let img = document.createElement('img');
+            img.setAttribute('src',`${urlImage}${icon}.png`);
+            img.setAttribute('alt',`${dt.toLocaleDateString("en-US",optionsDate)}, ${description}`);
+            img.setAttribute('width','50');
+            img.setAttribute('height','50');
+            
             let h4 = document.createElement('h4');
             h4.className = 'pTemp';
             h4.innerHTML = `${temp}&deg;F`;
-            dayCard.append(h4);
-
+            
             let p = document.createElement('p');
             p.className = 'pDesc';
             p.innerHTML = `${description}`;
+            
+            dayCard.append(img);
+            dayCard.append(h3);
+            dayCard.append(h4);
             dayCard.append(p);
 
             document.querySelector('.card-weather').append(dayCard);
