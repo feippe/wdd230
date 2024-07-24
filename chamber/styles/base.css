@@ -349,7 +349,8 @@ h1 {
     border-radius: 8px;
     padding: 16px;
 }
-#form-join-page fieldset label {
+#form-join-page fieldset label,
+#form-join-page fieldset span.label {
     display: block;
     font-size: 14px;
     color: var(--color-1);
